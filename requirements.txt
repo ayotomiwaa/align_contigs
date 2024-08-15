@@ -9,8 +9,9 @@ importlib_metadata
 itsdangerous
 Jinja2
 MarkupSafe
-requests==2.32.3
+requests
 six
-urllib3==2.2.2
+urllib3
 Werkzeug
 zipp
+gunicorn
