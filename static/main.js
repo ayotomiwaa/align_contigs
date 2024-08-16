@@ -34,7 +34,7 @@ async function processContigs(event) {
     try {
         const contigIds = contigInput.replace(/\s/g, '').split(',');
         const response = await fetch(
-        'http://127.0.0.1:5500/process_contigs',
+        '/process_contigs',
         {
             method: 'POST',
             headers: {
