@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Alignment Tool</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sequence Alignment Tool</h1>
+
+        <div class="input-group">
+            <label for="sequence">Enter Protein Sequence:</label>
+            <textarea id="sequence" name="sequence" rows="10" required></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="srr_accessions">Enter SRR Accessions (one per line):</label>
+            <textarea id="srr_accessions" name="srr_accessions" rows="5" 
+                      placeholder="Enter SRR accessions (e.g. ERR2756788, ERR2756789, ERR2756790, ERR2756791)"></textarea>
+        </div>
+
+        <div class="button-group">
+            <button type="button" id="processSequence">Process Sequence</button>
+            <button type="button" id="loadExample">Load Example</button>
+        </div>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p>Alignment results will appear here.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sequence Alignment Tool</p>
+    </footer>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
